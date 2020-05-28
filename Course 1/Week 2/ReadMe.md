@@ -14,3 +14,8 @@
 # Images And Media
 1. https://getbootstrap.com/docs/4.0/content/images/
 2. https://getbootstrap.com/docs/4.0/layout/media-object/
+
+# Badges and Alerts
+1. https://getbootstrap.com/docs/4.0/components/badge/
+2. https://getbootstrap.com/docs/4.0/components/alerts/
+3. https://getbootstrap.com/docs/4.0/components/progress/
