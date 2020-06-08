@@ -10,3 +10,8 @@
 2. https://getbootstrap.com/docs/4.0/components/navs/#tabs
 3. https://getbootstrap.com/docs/4.0/components/navs/#pills
 4. https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior
+
+# Collapse and Accordion
+
+1. https://getbootstrap.com/docs/4.0/components/collapse/
+2. https://getbootstrap.com/docs/4.0/components/collapse/#accordion-example
