@@ -15,3 +15,9 @@
 
 1. https://getbootstrap.com/docs/4.0/components/collapse/
 2. https://getbootstrap.com/docs/4.0/components/collapse/#accordion-example
+
+# ToolTips and Modals
+
+1. https://getbootstrap.com/docs/4.0/components/tooltips/
+2. https://getbootstrap.com/docs/4.0/components/popovers/
+3. https://getbootstrap.com/docs/4.0/components/modal/
