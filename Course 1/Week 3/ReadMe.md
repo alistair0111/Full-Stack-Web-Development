@@ -25,3 +25,9 @@
 # Carousel
 
 https://getbootstrap.com/docs/4.0/components/carousel/
+
+# Assignment 3
+
+1. https://getbootstrap.com/docs/4.0/components/buttons/#checkbox-and-radio-buttons
+2. https://getbootstrap.com/docs/4.0/components/modal/
+3. https://getbootstrap.com/docs/4.0/components/forms/
