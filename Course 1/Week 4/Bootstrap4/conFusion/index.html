@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul> 
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="loginclick" >
                             <span class="fa fa-sign-in"></span> Login In
                         </a>
                     </span>
@@ -43,9 +43,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
-                    X
-                    </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -82,9 +82,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <strong><h4 class="modal-title">Reserve A Table</h4></strong>
-                    <button type="button" class="close" data-dismiss="modal">
-                    X
-                    </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -158,7 +158,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 col-xs-12 mt-5 mt-sm-0 text-center align-self-center">
-                    <a  type="button" data-toggle="modal" data-target="#reserveModal"
+                    <a  type="button" id="rtbutton"
                        class="btn btn-block btn-warning">Reserve Table</a>
                 </div>
             </div>
@@ -382,6 +382,13 @@
                         $('#carouselButton').children('span').addClass('fa-pause')
                     }
                 });
+                $('#rtbutton').click(function(){
+                    $('#reserveModal').modal('show');
+                });
+                $('#loginclick').click(function(){
+                    $('#loginModal').modal('show');
+                });
+                
             });
         </script>
 </body>
