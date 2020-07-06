@@ -1,4 +1,4 @@
-# React resources
+# `React resources`
 
 1. https://reactjs.org/
 2. https://github.com/facebook/create-react-app
@@ -7,7 +7,7 @@
 5. https://reactjs.org/docs/introducing-jsx.html
 6. <a href='https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.10.4&externalPlugins='>Convert JSX using Online Babel Compiler</a>
 
-# Definitions
+# `Definitions`
 1. <a href="https://en.wikipedia.org/wiki/Software_framework">Framework</a>
 2. <a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion of Control</a>
 3. <a href="https://www.netguru.com/blog/imperative-vs-declarative">Imperative vs Declarative Programming</a>
