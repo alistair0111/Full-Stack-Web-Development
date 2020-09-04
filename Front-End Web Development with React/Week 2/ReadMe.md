@@ -14,3 +14,11 @@
 5. https://blog.logrocket.com/react-router-dom-set-up-essential-components-parameterized-routes-505dc93642f1/
 6. https://medium.com/@thejasonfile/basic-intro-to-react-router-v4-a08ae1ba5c42
 7. https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
+
+# Other Resources
+
+1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+2. https://en.wikipedia.org/wiki/Single-page_application
+3. https://en.wikipedia.org/wiki/Deep_linking
+4. http://singlepageappbook.com/
+5. https://johnpapa.net/pageinspa/
