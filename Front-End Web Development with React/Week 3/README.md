@@ -17,3 +17,12 @@
 4. https://www.viget.com/articles/controlling-components-react/
 5. https://medium.com/@peter.yun.kim/controlled-and-uncontrolled-input-values-in-react-907119cc98d4
 6. https://medium.com/capital-one-tech/how-to-work-with-forms-inputs-and-events-in-react-c337171b923b
+
+# Redux
+
+1. https://redux.js.org/
+2. https://github.com/reduxjs/redux
+3. https://redux.js.org/basics/usage-with-react
+4. https://redux.js.org/basics/basic-tutorial
+5. https://facebook.github.io/flux/
+6. https://github.com/markerikson/react-redux-links/blob/master/redux-tutorials.md
