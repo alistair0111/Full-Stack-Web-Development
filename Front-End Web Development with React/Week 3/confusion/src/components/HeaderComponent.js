@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand,Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Modal, Button, ModalHeader, ModalBody, FormGroup, Input, Label, Form } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
+
+
 class Header extends Component {
 
     constructor(props){
@@ -34,6 +36,7 @@ class Header extends Component {
         event.preventDefault();
     }
 
+    
     render(){
         return(
             <> 
@@ -87,8 +90,8 @@ class Header extends Component {
                             </div>
                         </div>
                     </Jumbotron>
-                    <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModalOpen}>
-                        <ModalHeader toggle={this.toggleModalOpen}>Login </ModalHeader>
+                    <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModalOpen} externalButton externalButtonClassName="cool-close-button" >
+                        <ModalHeader toggle={this.toggleModalOpen} >Login </ModalHeader>
                         <ModalBody>
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>
