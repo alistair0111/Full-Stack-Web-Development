@@ -20,7 +20,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
       );
     }
   
-    function RenderComments({comments}) {
+    function RenderComments({comments, addComment, dishId}) {
       if (comments == null || comments.length === 0) {
         return (
           <div></div>
@@ -42,6 +42,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
           <ul className="list-unstyled">
             { renderedComments }
           </ul>
+          <CommentForm dishId = {dishId}  addComment = {addComment}/>
         </div>
       );
     }
@@ -66,8 +67,9 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
                         <RenderDish dish={props.dish} />
                     </div>
                     <div className="col-12 col-md-5 m-1">
-                        <RenderComments comments={props.comments} />
-                        <CommentForm/>
+                        <RenderComments comments={props.comments} 
+                          addComment = {props.addComment}
+                          dishId = {props.dish.id}/>
                     </div>
                 </div>
         </div>
@@ -105,8 +107,8 @@ class CommentForm extends Component {
     }
 
     handleSubmit(values) {
-        console.log("Current State is: " + JSON.stringify(values));
-        alert("Current State is: " + JSON.stringify(values));
+        this.toggleModal();
+        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment); 
     }
 
 
@@ -116,7 +118,7 @@ class CommentForm extends Component {
         return(
         <>
             <Button outline onClick={this.toggleModal}><span className="fa fa-edit fa-lg"></span> Submit Comment</Button>
-            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModalOpen} externalButton externalButtonClassName="cool-close-button" >
+            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModalOpen} >
                 <ModalHeader toggle={this.toggleModalOpen} >Login </ModalHeader>
                     <ModalBody>
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
@@ -127,19 +129,21 @@ class CommentForm extends Component {
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </Control.select>
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="name" md={12}>Your Name</Label>
+                                <Label htmlFor="author" md={12}>Your Name</Label>
                                 <Col md={12}>
-                                    <Control.text model=".name" id="name" className="form-control" name="name" placeholder="Your Name"
-                                                    validators={{ required, minLength: minLength(3), maxLength: maxLength(15) }}/>
-                                    <Errors className="text-danger" model=".name" show="touched"
+                                    <Control.text model=".author" id="author" className="form-control" name="author" placeholder="Your Name"
+                                                    validators={{ required, minLength: minLength(3), maxLength: maxLength(20) }}/>
+                                    <Errors className="text-danger" model=".author" show="touched"
                                             messages={{
                                                 required: 'Required. ',
-                                                minLength: 'Must be greater than 2 numbers. ',
-                                                maxLength: 'Must be 15 numbers or less. '
+                                                minLength: 'Must be greater than 2 characters. ',
+                                                maxLength: 'Must be 20 characters or less. '
                                         }} 
                                     />
                                 </Col>
@@ -147,7 +151,7 @@ class CommentForm extends Component {
                             <Row className="form-group">
                                 <Label htmlFor="comment" md={12}>Comment</Label>
                                 <Col md={12}>
-                                <Control.textarea model=".message" id="message" rows="6" className="form-control" name="message" />
+                                <Control.textarea model=".comment" id="comment" rows="6" className="form-control" name="comment" />
                                 </Col>
                             </Row>
                             <Row className="form-group">
