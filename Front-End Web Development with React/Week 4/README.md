@@ -10,3 +10,9 @@
 2. https://github.com/reduxjs/redux-thunk
 3. https://github.com/LogRocket/redux-logger
 4. https://davidkpiano.github.io/react-redux-form/docs.html
+
+# JSON-SERVER
+
+1. https://github.com/typicode/json-server
+2. https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server
+3. https://www.json.org/json-en.html
