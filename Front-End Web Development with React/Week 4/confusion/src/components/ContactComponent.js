@@ -33,7 +33,7 @@ class Contact extends Component {
 
     render() {
         return(
-            <div className="container">
+            <div className='container'>
                 <div className='row'>
                     <Breadcrumb>
                         <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
@@ -41,7 +41,6 @@ class Contact extends Component {
                     </Breadcrumb>
                     <div className='col-12'>
                         <h3>Contact Us</h3>
-                        <hr/>
                     </div>
                 </div>
                 <div className="row row-content">

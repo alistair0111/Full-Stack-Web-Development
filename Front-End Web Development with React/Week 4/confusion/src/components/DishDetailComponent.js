@@ -22,7 +22,7 @@ import { baseUrl } from '../shared/baseUrl';
       );
     }
   
-    function RenderComments({comments, addComment, dishId}) {
+    function RenderComments({comments, postComment, dishId}) {
       if (comments == null || comments.length === 0) {
         return (
           <div></div>
@@ -31,7 +31,7 @@ import { baseUrl } from '../shared/baseUrl';
   
       const renderedComments = comments.map((comment) => {
         return (
-          <li>
+          <li key={comment.id}>
             <p>{comment.comment}</p>
             <p>-- {comment.author}, {new Intl.DateTimeFormat('en-US',{year:'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
           </li>
@@ -39,13 +39,13 @@ import { baseUrl } from '../shared/baseUrl';
       });
   
       return (
-        <div>
+        <>
           <h4>Comments</h4>
           <ul className="list-unstyled">
             { renderedComments }
           </ul>
-          <CommentForm dishId = {dishId}  addComment = {addComment}/>
-        </div>
+          <CommentForm dishId = {dishId}  postComment = {postComment}/>
+        </>
       );
     }
   
@@ -87,7 +87,7 @@ import { baseUrl } from '../shared/baseUrl';
                     </div>
                     <div className="col-12 col-md-5 m-1">
                         <RenderComments comments={props.comments} 
-                          addComment = {props.addComment}
+                          postComment = {props.postComment}
                           dishId = {props.dish.id}/>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ class CommentForm extends Component {
 
     handleSubmit(values) {
         this.toggleModal();
-        this.props.addComment(this.props.dishId, values.rating, values.author, values.comment); 
+        this.props.postComment(this.props.dishId, values.rating, values.author, values.comment); 
     }
 
 
