@@ -334,6 +334,36 @@
       "message": "afadsfds",
       "date": "2017-12-04T09:41:49.890Z",
       "id": 1
+    },
+    {
+      "firstname": "Alistair",
+      "lastname": "Baretto",
+      "telnum": "8291604947",
+      "email": "alistair.baretto@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "Test",
+      "id": 2
+    },
+    {
+      "firstname": "Alistair",
+      "lastname": "Baretto",
+      "telnum": "08291604947",
+      "email": "alistair.baretto@gmail.com",
+      "agree": true,
+      "contactType": "Tel.",
+      "message": "Best Restaurant",
+      "id": 3
+    },
+    {
+      "firstname": "Alistair",
+      "lastname": "Baretto",
+      "telnum": "8291604947",
+      "email": "alistair.baretto@gmail.com",
+      "agree": false,
+      "contactType": "Tel.",
+      "message": "Best Mix Cuisines",
+      "id": 4
     }
   ]
 }
