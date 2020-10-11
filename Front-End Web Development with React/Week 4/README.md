@@ -39,3 +39,10 @@
 7. https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e
 8. https://www.freshtilledsoil.com/whats-the-most-developer-friendly-react-animation-library/
 9. https://medium.com/@joomiguelcunha/amazing-react-animation-with-react-pose-3b67d9eb6e07
+
+# WebPack
+
+1. https://v5.angular.io/guide/webpack
+2. https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-build
+3. https://webpack.js.org/concepts/4. 
+4. https://webpack.github.io/
