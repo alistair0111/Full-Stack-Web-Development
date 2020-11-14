@@ -1,44 +1,11 @@
-import * as ActionTypes from './ActionsTypes';
+import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseUrl';
 
-export const fetchComments = () => {
+export const fetchComments = () => (dispatch) => {
     return fetch(baseUrl + 'comments')
-        .then(response =>{
-            if(response.ok){
-                return response;
-            }
-            else {
-                var error = new Error('Error' + response.status+": "+response.statusCode);
-                error.response = response;
-                throw error;
-            }
-        },
-        error => {
-            var error = new Error(error.message)
-            throw error;
-        })
-        .then(reponse => reponse.json())
-        .then(comments => dispatch(addComments(comments)))
-        .catch(error => dispatch(commentsFailed(error.message)))
-}
-
-export const commentsFailed = (errmess) => ({
-    type: ActionTypes.COMMENTS_FAILED,
-    payload: errmess
-})
-
-export const addComment = (comments) => ({
-    type: ActionTypes.ADD_COMMENTS,
-    payload: errmess
-})
-
-export const fetchDishes = () => (dispatch) => {
-
-    dispatch(dishesLoading());
-
-    return fetch(baseUrl + 'dishes')
     .then(response => {
         if (response.ok) {
+          console.log("fetchComments Working");
           return response;
         } else {
           var error = new Error('Error ' + response.status + ': ' + response.statusText);
@@ -47,6 +14,43 @@ export const fetchDishes = () => (dispatch) => {
         }
       },
       error => {
+        console.log("fetchComments Not Working");
+            var errmess = new Error(error.message);
+            throw errmess;
+      })
+    .then(response => response.json())
+    .then(comments => dispatch(addComments(comments)))
+    .catch(error => dispatch(commentsFailed(error.message)));
+};
+
+export const commentsFailed = (errmess) => ({
+    type: ActionTypes.COMMENTS_FAILED,
+    payload: errmess
+});
+
+export const addComments = (comments) => ({
+    type: ActionTypes.ADD_COMMENTS,
+    payload: comments
+});
+
+export const fetchDishes = () => (dispatch) => {
+
+    dispatch(dishesLoading());
+
+    return fetch(baseUrl + 'dishes')
+    .then(response => {
+        if (response.ok) {
+            console.log("fetchDishes Woking");
+          return response;
+        } else {
+          var error = new Error('Error ' + response.status + ': ' + response.statusText);
+          error.response = response;
+          throw error;
+        }
+      },
+      error => {
+        console.log("fetchDishes Not Woking");
+
             var errmess = new Error(error.message);
             throw errmess;
       })
