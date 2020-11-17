@@ -30,3 +30,10 @@
 9. https://github.com/LogRocket/redux-logger
 9. https://facebook.github.io/flux/
 10. https://github.com/markerikson/react-redux-links/blob/master/redux-tutorials.md
+
+
+# React Native Resources (Modal)
+
+1. https://reactnative.dev/docs/modal
+2. https://reactnativeelements.com/docs/input.html/
+3. https://github.com/xgfe/react-native-datepicker
