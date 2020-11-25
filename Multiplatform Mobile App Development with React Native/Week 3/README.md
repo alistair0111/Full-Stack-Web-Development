@@ -7,3 +7,7 @@
 1. https://reactnative.dev/docs/animations
 2. https://reactnative.dev/docs/animations
 3. https://github.com/oblador/react-native-animatable
+
+# React Native Resources { Gestures }
+1. https://reactnative.dev/docs/panresponder
+2. https://github.com/oblador/react-native-animatable
