@@ -32,10 +32,10 @@ const mapDispatchToProps = dispatch => ({
     postComment: (dishId, rating, author, comment) => dispatch(postComment(dishId, rating, author, comment))
 });
 
+
+
 function RenderDish(props) {
     const dish = props.dish;
-
-    // handleViewRef = null;
 
     const recognizeDrag = ({ moveX, moveY, dx, dy }) => {
         if (dx < -200){
@@ -46,12 +46,18 @@ function RenderDish(props) {
         }
     }
 
+    const recognizeComment = ({ dx }) => {
+        if (dx > 200) 
+            return true;
+        return false;
+      };
+
     const panResponder = PanResponder.create({
         onStartShouldSetPanResponder: (e, gestureState) => {
             return true;
         },
         onPanResponderGrant: () => 
-            this.handleViewRef.rubberBand(1000)
+            this.view.rubberBand(1000)
                 .then(endState => console.log(endState.finished ? 'finished' : 'cancelled')),
         
         onPanResponderEnd: (e, gestureState) => {
@@ -73,14 +79,18 @@ function RenderDish(props) {
                     { cancelable: false}
                 )
             }
+            else if(recognizeComment(gestureState)){
+                props.onPressAddComment();
+            }
             return true;
         } 
     });
 
+    handleViewRef = ref => this.view = ref;
     if (dish != null) {
         return (
             <Animatable.View animation='fadeInDown' duration={2000} delay={1000}
-                ref={ref => handleViewRef = ref}
+                ref={this.handleViewRef}
                 {...panResponder.panHandlers}>
                 <Card featuredTitle={dish.name} image={{ uri: baseUrl + dish.image }}>
                     <Text style={{ margin: 10 }}>{dish.description}</Text>
@@ -210,13 +220,13 @@ class DishDetail extends Component {
         return (
             <ScrollView>
                 <RenderDish
-                dish={this.props.dishes.dishes[+dishId]}
-                favorite={this.props.favorites.some(el => el === dishId)}
-                onPressFavorite={() => this.markFavorite(dishId)}
-                onPressAddComment={this.toggleModal}
+                    dish={this.props.dishes.dishes[+dishId]}
+                    favorite={this.props.favorites.some(el => el === dishId)}
+                    onPressFavorite={() => this.markFavorite(dishId)}
+                    onPressAddComment={this.toggleModal}
                 />
                 <RenderComments
-                comments={this.props.comments.comments.filter(
+                    comments={this.props.comments.comments.filter(
                     comment => comment.dishId === dishId
                 )}
                 />

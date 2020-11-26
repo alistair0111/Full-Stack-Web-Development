@@ -233,6 +233,14 @@
       "comment": "Best dish",
       "date": "2020-11-21T14:42:43.004Z",
       "id": 23
+    },
+    {
+      "dishId": 0,
+      "rating": 4,
+      "author": "Michael B",
+      "comment": "Best Dish",
+      "date": "2020-11-26T10:26:06.490Z",
+      "id": 24
     }
   ],
   "promotions": [
