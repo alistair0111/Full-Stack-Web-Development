@@ -7,3 +7,5 @@
 5. https://docs.expo.io/versions/v27.0.0/sdk/notifications
 6. https://docs.expo.io/versions/v27.0.0/sdk/mail-composer
 7. https://facebook.github.io/react-native/docs/share.html
+8. https://docs.expo.io/versions/latest/sdk/imagepicker/?redirected
+9. https://docs.expo.io/versions/v27.0.0/sdk/imagemanipulator
