@@ -6028,6 +6028,11 @@ expo-asset@~8.1.5:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-calendar@^8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/expo-calendar/-/expo-calendar-8.5.0.tgz#0edf57628adb56b7825ee7b78d54f376775686fb"
+  integrity sha512-c8EfiWn57ygH+NTYjltYGHeIlB3mNQM7yW8U0q/718qkm6vuBW4avxVL722msQ6b5ZhHw1jRDTBPbkto/qsMcA==
+
 expo-cli@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/expo-cli/-/expo-cli-4.0.6.tgz#81356d995a1e598622578cd7cf34e0cf8a8db4b2"

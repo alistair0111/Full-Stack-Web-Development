@@ -12,6 +12,7 @@
     "@types/react-navigation": "^3.4.0",
     "expo": "^37.0.0",
     "expo-asset": "^8.2.0",
+    "expo-calendar": "^8.5.0",
     "expo-cli": "^4.0.6",
     "expo-image-manipulator": "^8.3.0",
     "expo-image-picker": "^9.1.1",
