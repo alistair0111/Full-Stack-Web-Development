@@ -249,6 +249,14 @@
       "comment": "Maja Aali",
       "date": "2020-11-26T14:55:50.644Z",
       "id": 25
+    },
+    {
+      "dishId": 0,
+      "rating": null,
+      "author": "Noel Paul",
+      "comment": "Try odasasasd",
+      "date": "2020-12-03T14:33:31.930Z",
+      "id": 26
     }
   ],
   "promotions": [

@@ -17,10 +17,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "net.food.confusion.confusion"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "net.food.confusion.confusion",
+      "versionCode": 1
     }
   }
 }
