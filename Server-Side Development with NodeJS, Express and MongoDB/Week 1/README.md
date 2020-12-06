@@ -19,4 +19,12 @@
 2. https://nodejs.org/api/fs.html
 3. https://nodejs.org/api/http.html
 4. https://nodejs.org/api/path.html
-5. 
+
+# Express
+
+1. https://github.com/senchalabs/connect
+2. http://expressjs.com/
+3. https://github.com/expressjs/morgan
+4. https://github.com/expressjs/body-parser
+5. http://evanhahn.com/understanding-express/
+6. https://stephensugden.com/middleware_guide/
