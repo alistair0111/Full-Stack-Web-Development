@@ -23,6 +23,12 @@
 5. https://mongoosejs.com/docs/subdocs.html
 6. https://www.npmjs.com/package/mongoose-currency
 
+# REST API Node, Mongoose & Express
+
+1. https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+2. https://adrianmejia.com/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
+3. http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/
+
 # Miscellaneous
 
 1. http://callbackhell.com/
