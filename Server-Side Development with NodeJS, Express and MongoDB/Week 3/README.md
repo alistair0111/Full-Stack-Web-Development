@@ -11,4 +11,3 @@
 4. https://en.wikipedia.org/wiki/HTTP_cookie
 5. http://expressjs-book.com/index.html%3Fp=128.html
 6. https://javabeat.net/expressjs-session-management/
-
