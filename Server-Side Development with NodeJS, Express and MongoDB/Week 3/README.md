@@ -26,6 +26,11 @@
 2. https://tools.ietf.org/html/rfc7519
 3. https://github.com/auth0/node-jsonwebtoken
 
+# Mongoose Population
+
+1. https://mongoosejs.com/docs/populate.html
+2. https://alexanderzeitler.com/articles/mongoose-referencing-schema-in-properties-and-arrays/
+
 # Miscallaneous
 
 1. https://mherman.org/blog/local-authentication-with-passport-and-express-4/
