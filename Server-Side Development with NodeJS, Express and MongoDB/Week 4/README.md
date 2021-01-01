@@ -10,6 +10,19 @@
 2. https://tools.ietf.org/html/rfc7578
 3. https://stackoverflow.com/questions/8659808/how-does-http-file-upload-work
 
+# Cors
+
+1. https://www.npmjs.com/package/cors
+2. https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+3. https://en.wikipedia.org/wiki/Same-origin_policy
+4. https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
+5. https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+6. https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+7. https://medium.com/zero-equals-false/using-cors-in-express-cac7e29b005b
+8. https://web.dev/cross-origin-resource-sharing/
+9. https://humanwhocodes.com/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/
+10. http://arunranga.com/examples/access-control/
+
 # Miscallaneous
 
 1. https://en.wikipedia.org/wiki/Public-key_cryptography
