@@ -23,6 +23,20 @@
 9. https://humanwhocodes.com/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/
 10. http://arunranga.com/examples/access-control/
 
+# OAuth
+
+1. https://oauth.net/2/
+2. https://oauth.net/
+3. https://en.wikipedia.org/wiki/OAuth
+4. https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+5. http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/
+
+# Passport-facebook
+
+1. https://github.com/drudge/passport-facebook-token
+2. https://mherman.org/blog/social-authentication-with-passport-dot-js/
+3. 
+
 # Miscallaneous
 
 1. https://en.wikipedia.org/wiki/Public-key_cryptography

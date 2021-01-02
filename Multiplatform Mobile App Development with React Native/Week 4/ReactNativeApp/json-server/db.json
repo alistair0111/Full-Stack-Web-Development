@@ -257,6 +257,14 @@
       "comment": "Try odasasasd",
       "date": "2020-12-03T14:33:31.930Z",
       "id": 26
+    },
+    {
+      "dishId": 0,
+      "rating": 5,
+      "author": "Best dish",
+      "comment": "Woohooo",
+      "date": "2021-01-01T07:13:43.236Z",
+      "id": 27
     }
   ],
   "promotions": [
